@@ -1,0 +1,17 @@
+[
+  {
+    "model": "HackHotelBookingapi.hotel",
+    "pk": 1,
+    "fields": {
+      "name": "Hampton Inn of Lexington",
+      "images": {
+        "image_1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4c/86/a7/hampton-inn-lexington.jpg?w=700&h=-1&s=1",
+        "image_2": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/473573970.jpg?k=428e5a52ade2f4816a4fccee261081632f172ff78f3be5eeaddeae1d81663547&o=&hp=1"
+      },
+      "address": "123 Kentucky Ave",
+      "city": "Lexington",
+      "amenities": "outdoor pool, continental breakfast, airport shuttle",
+      "rating": 3
+    }
+  }
+]
