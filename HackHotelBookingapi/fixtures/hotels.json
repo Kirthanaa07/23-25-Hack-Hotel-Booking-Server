@@ -4,14 +4,44 @@
     "pk": 1,
     "fields": {
       "name": "Hampton Inn of Lexington",
-      "images": {
-        "image_1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4c/86/a7/hampton-inn-lexington.jpg?w=700&h=-1&s=1",
-        "image_2": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/473573970.jpg?k=428e5a52ade2f4816a4fccee261081632f172ff78f3be5eeaddeae1d81663547&o=&hp=1"
-      },
+      "images": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4c/86/a7/hampton-inn-lexington.jpg?w=700&h=-1&s=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/473573970.jpg?k=428e5a52ade2f4816a4fccee261081632f172ff78f3be5eeaddeae1d81663547&o=&hp=1"
+      ],
       "address": "123 Kentucky Ave",
       "city": "Lexington",
       "amenities": "outdoor pool, continental breakfast, airport shuttle",
       "rating": 3
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.hotel",
+    "pk": 2,
+    "fields": {
+      "name": "Grand Plaza Hotel",
+      "images": [
+        "https://images.trvl-media.com/hotels/64000000/63070000/63060200/63060157/36d3b8c9_z.jpg",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/378835380.jpg?k=195487823935f95f7a6eb5e7b2ceca305665e22af290ca3cf64198f5e618b341&o=&hp=1"
+      ],
+      "address": "456 Downtown Blvd",
+      "city": "Metropolis",
+      "amenities": "indoor pool, spa, fitness center",
+      "rating": 4
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.hotel",
+    "pk": 3,
+    "fields": {
+      "name": "Sunset Beach Resort",
+      "images": [
+        "https://image-tc.galaxy.tf/wijpeg-cizichtskymszyep13jka8m1f/atardecer-morado.jpg?width=1920",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/83/6a/3e/deluxe-seaview.jpg?w=700&h=-1&s=1"
+      ],
+      "address": "789 Oceanfront Avenue",
+      "city": "Sunsetville",
+      "amenities": "beachfront, seafood restaurant, water sports",
+      "rating": 5
     }
   }
 ]
