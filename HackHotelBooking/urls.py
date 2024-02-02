@@ -17,10 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
-from HackHotelBookingapi.views import HotelView, check_user, register_user
+from HackHotelBookingapi.views import RoomView, BookingView, HotelView, check_user, register_user
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'rooms', RoomView, 'room')
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'bookings', BookingView, 'booking')
 router.register(r'hotels', HotelView, 'hotel')
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
