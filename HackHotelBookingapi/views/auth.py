@@ -41,14 +41,13 @@ def register_user(request):
     Method arguments:
       request -- The full HTTP request object
     '''
-    active_bytes = bytes([int(True)])
     # Now save the user info in the levelupapi_gamer table
     user = User.objects.create(
-        first_name=request.data['first_name'],
-        last_name=request.data['last_name'],
-        bio=request.data['bio'],
-        email=request.data['email'],
-        uid=request.data['uid']
+        first_name=request.data["first_name"],
+        last_name=request.data["last_name"],
+        bio=request.data["bio"],
+        email=request.data["email"],
+        uid=request.data["uid"]
         
     )
 
