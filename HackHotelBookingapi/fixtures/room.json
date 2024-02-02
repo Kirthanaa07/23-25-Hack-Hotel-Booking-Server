@@ -1,0 +1,44 @@
+[
+  {
+    "model": "HackHotelBookingapi.room",
+    "pk": 1,
+    "fields": {
+      "hotel": 1,
+      "images": [
+        "https://amorgoshotel.com/wp-content/uploads/2014/12/Amorgos-Standard-Room2-e1464286437370.jpg",
+        "https://media.istockphoto.com/id/180451126/photo/hotel-standard-room.jpg?s=612x612&w=0&k=20&c=iu4nL4_zUf7AI6iL74zvpqHFg-0AFR3bdTP68WJf5_g="
+      ],
+      "room_number": "101",
+      "room_type": "Standard",
+      "price_per_night": 120.00
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.room",
+    "pk": 2,
+    "fields": {
+      "hotel": 2,
+      "images": [
+        "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/70/2016/11/22095538/suite-novotel-bangkok-ploenchit-sukhumvit-1.jpeg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkIpHm3qvbZ65y4y4sjtCiP1EoOEXPa83_h-pJt5IKA&s"
+      ],
+      "room_number": "102",
+      "room_type": "Suite",
+      "price_per_night": 220.00
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.room",
+    "pk": 3,
+    "fields": {
+      "hotel": 3,
+      "images": [
+        "https://www.marinabaysands.com/content/dam/marinabaysands/hotel/deluxe-room/deluxe-room-gallery-2-1920x1080.jpg",
+        "https://www.peninsula.com/en/-/media/pbk/rooms/deluxe-room-twin-bed.jpg?mw=905&hash=9515693D3D8455DE1F48031E23A9C6BA"
+      ],
+      "room_number": "103",
+      "room_type": "Deluxe",
+      "price_per_night": 180.00
+    }
+  }
+]
