@@ -43,6 +43,11 @@ class HotelView(ViewSet):
       hotel.save()
       
       return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk):
+        hotel = Hotel.objects.get(pk=pk)
+        hotel.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
         
 class HotelSerializer(serializers.ModelSerializer):
     class Meta:
