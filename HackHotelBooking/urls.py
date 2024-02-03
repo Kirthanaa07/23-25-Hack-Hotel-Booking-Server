@@ -21,7 +21,6 @@ from HackHotelBookingapi.views import RoomView, BookingView, HotelView, check_us
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'rooms', RoomView, 'room')
-router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'bookings', BookingView, 'booking')
 router.register(r'hotels', HotelView, 'hotel')
 
