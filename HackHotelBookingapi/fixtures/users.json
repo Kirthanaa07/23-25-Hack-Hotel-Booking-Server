@@ -1,0 +1,24 @@
+[
+  {
+    "model": "HackHotelBookingapi.user",
+    "pk": 1,
+    "fields": {
+      "uid": "3874eghwq3oe",
+      "first_name": "Annie",
+      "last_name": "Hamiltion",
+      "email": "annieham@gmail.com",
+      "bio": "this is a bio" 
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.user",
+    "pk": 2,
+    "fields": {
+      "uid": "837yrhufslefh",
+      "first_name": "Madi",
+      "last_name": "Baeir",
+      "email": "maddyb@yahoo.com",
+      "bio": "this is also a bio"
+    }
+  }
+]
