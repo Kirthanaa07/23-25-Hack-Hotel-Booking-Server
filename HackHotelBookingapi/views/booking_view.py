@@ -44,8 +44,23 @@ class BookingView(ViewSet):
         )
         serializer = BookingSerializer(booking)
         return Response(serializer.data)
+    
+    def update(self, request, pk):
+        booking = Booking.objects.get(pk=pk)
+        booking.no_of_guests = request.data["no_of_guests"]
+        booking. check_in = request.data[" check_in"]
+        booking.check_out = request.data["check_out"]
+        booking.total_amount = request.data["total_amount"]
+        booking.payment_type = request.data["payment_type"]
+        booking.save()
 
-
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk):
+        booking = Booking.objects.get(pk=pk)
+        booking.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        
 class BookingSerializer(serializers.ModelSerializer):
     """JSON serializer for game types"""
 

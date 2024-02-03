@@ -29,6 +29,22 @@ class RoomView(ViewSet):
         )
         serializer = RoomSerializer(room)
         return Response(serializer.data)
+    
+    def update(self, request, pk):
+        room = Room.objects.get(pk=pk)
+        room.room_number = request.data["room_number"]
+        room.images = request.data["images"]
+        room.price_per_night = request.data["price_per_night"]
+        room.room_type = request.data["room_type"]
+        room.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk):
+        room = Room.objects.get(pk=pk)
+        room.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        
 
 
 class RoomSerializer(serializers.ModelSerializer):

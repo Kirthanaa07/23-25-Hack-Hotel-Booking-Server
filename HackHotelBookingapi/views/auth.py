@@ -6,11 +6,6 @@ from rest_framework.response import Response
 
 @api_view(['POST'])
 def check_user(request):
-    '''Checks to see if User has Associated Gamer
-
-    Method arguments:
-      request -- The full HTTP request object
-    '''
     uid = request.data['uid']
 
     # Use the built-in authenticate method to verify
@@ -36,11 +31,6 @@ def check_user(request):
 
 @api_view(['POST'])
 def register_user(request):
-    '''Handles the creation of a new gamer for authentication
-
-    Method arguments:
-      request -- The full HTTP request object
-    '''
     # Now save the user info in the levelupapi_gamer table
     user = User.objects.create(
         first_name=request.data["first_name"],
