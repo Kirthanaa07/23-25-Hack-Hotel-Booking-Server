@@ -4,6 +4,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from HackHotelBookingapi.models import Room, Hotel
+from HackHotelBookingapi.views.hotel import HotelSerializer
 
 
 class RoomView(ViewSet):
@@ -48,6 +49,7 @@ class RoomView(ViewSet):
 
 
 class RoomSerializer(serializers.ModelSerializer):
+    hotel = HotelSerializer()
     class Meta:
         model = Room
         fields = (
