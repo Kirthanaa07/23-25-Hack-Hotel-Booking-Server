@@ -1,32 +1,29 @@
 """View module for handling requests about game types"""
+from http import HTTPMethod
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
+from rest_framework.decorators import action
 from rest_framework import serializers, status
 from HackHotelBookingapi.models import Booking, User, Room
+from HackHotelBookingapi.views.room_view import RoomSerializer
 
 
 class BookingView(ViewSet):
-    """Level up game types view"""
-
     def retrieve(self, request, pk):
-        """Handle GET requests for single game type
-
-        Returns:
-            Response -- JSON serialized game type
-        """
         booking = Booking.objects.get(pk=pk)
         serializer = BookingSerializer(booking)
         return Response(serializer.data)
 
     def list(self, request):
-        """Handle GET requests to get all game types
-
-        Returns:
-            Response -- JSON serialized list of game types
-        """
-        booking = Booking.objects.all()
-        serializer = BookingSerializer(booking, many=True)
+        
+        userId = request.GET.get('userId')
+        if userId is not None:
+            bookings = Booking.objects.filter(user_id=userId)
+        else:
+            bookings = Booking.objects.all()
+                
+        serializer = BookingSerializer(bookings, many=True)
         return Response(serializer.data)
 
     def create(self, request):
@@ -60,10 +57,9 @@ class BookingView(ViewSet):
         booking = Booking.objects.get(pk=pk)
         booking.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
-        
+    
 class BookingSerializer(serializers.ModelSerializer):
-    """JSON serializer for game types"""
-
+    room = RoomSerializer()
     class Meta:
         model = Booking
         fields = (
