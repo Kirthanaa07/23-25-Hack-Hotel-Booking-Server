@@ -14,8 +14,12 @@ class RoomView(ViewSet):
         return Response(serializer.data)
 
     def list(self, request):
-        room = Room.objects.all()
-        serializer = RoomSerializer(room, many=True)
+        hotelId = request.GET.get("hotelId")
+        if hotelId is not None:
+            rooms = Room.objects.filter(hotel_id=hotelId)
+        else:
+            rooms = Room.objects.all()
+        serializer = RoomSerializer(rooms, many=True)
         return Response(serializer.data)
 
     def create(self, request):
