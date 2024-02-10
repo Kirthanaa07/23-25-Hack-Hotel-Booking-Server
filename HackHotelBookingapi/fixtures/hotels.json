@@ -43,5 +43,47 @@
       "amenities": "beachfront, seafood restaurant, water sports",
       "rating": 5
     }
+  },
+  {
+   "model": "HackHotelBookingapi.hotel",
+   "pk": 4,
+   "fields": {
+    "name": "Breezy Inn and Suites",
+    "images": [
+      "https://afar.brightspotcdn.com/dims4/default/c2bebeb/2147483647/strip/false/crop/3508x2339+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2Ff5%2Fd5%2Fdc24d06b4c0e9b3d6b8769316b47%2Fwater-villa-7428-a4.jpg", "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2015/04/las-ventanas-al-paraiso-los-cabos-mexico.jpg?fit=968%2C545&ssl=1"
+    ],
+    "address": "2000 Beach Dr",
+    "city": "Ocean City",
+    "amenities": "private beach, full day spa, poolside bar",
+    "rating": 5
+   } 
+  },
+  {
+    "model": "HackHotelBookingapi.hotel",
+    "pk": 5,
+    "fields": {
+      "name": "Mountain Pass Hotel",
+      "images": [
+        "https://www.travelocity.com/inspire/wp-content/uploads/2018/06/The-Lodge-at-Edgewood-Tahoe-1280x720.jpg", "https://assets.cntraveller.in/photos/63a53dc3d7caa4e531854e77/master/pass/ROOM%20WITH%20A%20VIEW%20LEAD.jpg"
+      ],
+      "address": "1010 Peak Passage Dr",
+      "city": "Mountain Town",
+      "amenities": "hiking tours, pet-friendly, free sauna passes",
+      "rating": 4
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.hotel",
+    "pk": 6,
+    "fields": {
+    "name": "Shady Lane Motel",
+    "images": [
+      "https://www.genevainnlax.com/site/assets/files/9872/affordable_motel_in_inglewood-24.1200x0.jpg"
+    ],
+    "address": "900 Highway Ave",
+    "city": "Creepyville",
+    "amenities": "pool, vending machines",
+    "rating": 2
+  }
   }
 ]
