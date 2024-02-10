@@ -45,13 +45,13 @@ class BookingView(ViewSet):
     def update(self, request, pk):
         booking = Booking.objects.get(pk=pk)
         booking.no_of_guests = request.data["no_of_guests"]
-        booking. check_in = request.data[" check_in"]
+        booking. check_in = request.data["check_in"]
         booking.check_out = request.data["check_out"]
         booking.total_amount = request.data["total_amount"]
         booking.payment_type = request.data["payment_type"]
         booking.save()
-
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        serializer = BookingSerializer(booking)
+        return Response(serializer.data)
     
     def destroy(self, request, pk):
         booking = Booking.objects.get(pk=pk)
