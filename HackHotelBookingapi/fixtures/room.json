@@ -40,5 +40,57 @@
       "room_type": "Deluxe",
       "price_per_night": 180.00
     }
+  },
+  {
+    "model": "HackHotelBookingapi.room",
+    "pk": 4,
+    "fields": {
+    "hotel": 3,
+    "room_number": 104,
+    "room_type": "Deluxe",
+    "images": [
+      "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/70/2016/11/22095538/suite-novotel-bangkok-ploenchit-sukhumvit-1.jpeg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkIpHm3qvbZ65y4y4sjtCiP1EoOEXPa83_h-pJt5IKA&s"
+    ],
+    "price_per_night": 210
+  }
+  },
+  {
+    "model": "HackHotelBookingapi.room",
+    "pk": 5,
+    "fields": {
+      "hotel": 4,
+      "room_number": 654,
+      "room_type": "Standard",
+      "images": [
+        "https://www.maunakearesort.com/images/content/imageslider/ocean-front-01.jpg?07884518995534815", "https://www.halekoa.com/application/files/9614/9850/4405/HKHweb_accom_deluxe-ocean-front.jpg"
+      ],
+      "price_per_night": 310
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.room",
+    "pk": 6,
+    "fields": {
+      "hotel": 4,
+      "room_number": 789,
+      "room_type": "Deluxe King",
+      "images": [
+        "https://image-tc.galaxy.tf/wijpeg-jvtt2oju374d1c3pw4hij9br/pelhamhouserm-29-01-p.jpg", "https://image-tc.galaxy.tf/wijpeg-jvtt2oju374d1c3pw4hij9br/pelhamhouserm-29-01-p.jpg" 
+      ],
+      "price_per_night": 350.00
+    }
+  },
+  {
+    "model": "HackHotelBookingapi.room",
+    "pk": 7,
+    "fields": {
+      "hotel": 5,
+      "room_number": 645,
+      "room_type": "Standard",
+      "images": [
+        "https://thejosie.com/wp-content/uploads/2019/12/Deluxe_King_Winter-horz-1024x768.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToGeeH7ftm6ZHELUoO3fZWgtDCY6j-vpWO0w&usqp=CAU"
+      ],
+      "price_per_night": 150
+    }
   }
 ]
